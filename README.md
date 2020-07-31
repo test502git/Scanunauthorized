@@ -1,5 +1,5 @@
 # Scanunauthorized 批量检测各种未授权访问漏洞
-###功能
+### 功能
 * redis未授权
 * Hadoop未授权
 * docker未授权
@@ -14,15 +14,15 @@
 * jenkins未授权
 * target未授权
 * jboss的未授权访问
-检测速度快, 支持批量, 多线程, 使用python3编写。
 
-把整理好的ip放到当前host.txt文本中，使用Python3运行该项目即可。
+检测速度快, 支持批量, 多线程, 使用python3编写
+把整理好的ip放到当前host.txt文本中，使用Python3运行该项目即可
 
 # 安装-运行
 ```
 pip3 install -r requirements.txt
 ```
-把ip整理好，放到url.txt文本中，运行该项目。
+把ip整理好，放到url.txt文本中，运行该项目
 ```
 python3 Scanunauthorized.py
 ```
