@@ -1,4 +1,4 @@
-# Scanunauthorized 批量检测各种未授权访问漏洞
+# Scanunauthorized 一键批量检测各种未授权访问漏洞
 ![mahua](http://mahua.jser.me/mahua-logo.jpg)
 ### 功能
 * redis未授权
