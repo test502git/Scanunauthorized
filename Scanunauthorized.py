@@ -213,10 +213,10 @@ def postgres(ip):
         bar.update(1)
 
     
-#目前支持：redis,Hadoop,docker,CouchDB,ftp,zookeeper,elasticsearch,memcached,mongodb,rsync_access,mysql,target),jenkins,target),jboss的未授权访问，检测速度快
+#目前支持：redis,Hadoop,docker,CouchDB,ftp,zookeeper,elasticsearch,memcached,mongodb,rsync_access,mysql,target,jenkins,target,jboss的未授权访问，检测速度快
 
 if __name__ == '__main__':
-    ipfile=open('url.txt','r',encoding='utf-8').read().split('\n')
+    ipfile=open('host.txt','r',encoding='utf-8').read().split('\n')
     bar = tqdm(total=len(ipfile) * 14)
     pool=ThreadPoolExecutor(500)
     for target in ipfile:
