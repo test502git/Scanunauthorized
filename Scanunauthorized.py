@@ -234,4 +234,4 @@ if __name__ == '__main__':
         pool.submit(mysql_Empty_pwd,target)
         pool.submit(jenkins,target)
         pool.submit(jboss, target)
-        pool.submit(postgres, target) #需要导入psycopg2包
+        pool.submit(postgres, target) 
