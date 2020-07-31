@@ -1,5 +1,6 @@
 # coding=utf-8
-import ftplib,threading,requests,pymongo,pymysql,psycopg2,socket
+import ftplib,threading,requests,pymongo,pymysql,socket
+#import psycopg2,
 from tqdm import tqdm
 from concurrent.futures import ThreadPoolExecutor
 R = threading.Lock()
@@ -198,6 +199,7 @@ def jboss(ip):
         pass
         bar.update(1)
 
+      """
 def postgres(ip):
     try:
         conn = psycopg2.connect(database="postgres",user="postgres", password="", host=ip, port="5432")
@@ -210,7 +212,8 @@ def postgres(ip):
         pass
         bar.update(1)
 
-
+  """
+    
 #目前支持：redis,Hadoop,docker,CouchDB,ftp,zookeeper,elasticsearch,memcached,mongodb,rsync_access,mysql,target),jenkins,target),jboss的未授权访问，检测速度快
 
 if __name__ == '__main__':
@@ -232,4 +235,4 @@ if __name__ == '__main__':
         pool.submit(mysql_Empty_pwd,target)
         pool.submit(jenkins,target)
         pool.submit(jboss, target)
-        pool.submit(postgres, target)
+        #pool.submit(postgres, target) #需要导入psycopg2包
