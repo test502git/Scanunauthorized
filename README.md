@@ -22,7 +22,7 @@
 ```
 pip3 install -r requirements.txt
 ```
-把ip整理好，放到url.txt文本中，运行该项目
+把ip整理好，放到host.txt文本中，运行该项目
 ```
 python3 Scanunauthorized.py
 ```
