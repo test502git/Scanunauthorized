@@ -21,7 +21,7 @@
 
 # 安装-运行
 ```
-pip3 install -r requirements.txt
+pip3 install -r requirements.txt  -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 把ip整理好，放到host.txt文本中，运行该项目
 ```
